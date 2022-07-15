@@ -6,11 +6,11 @@ import java.util.Scanner;
 
 public class Main {
 
-    static Map<String, Vehicle> vehicles = new HashMap<>();
-
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
+        Map<String, Vehicle> vehicles = new HashMap<>();
+        
         Car.buildVehicle(scanner, vehicles);
         Truck.buildVehicle(scanner, vehicles);
 
